@@ -1,0 +1,21 @@
+# Node modules
+node_modules/
+
+# Build output
+assets/css/*
+assets/js/*
+
+# Mac and system files
+.DS_Store
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Vite cache
+.vite/
+
+# Editor folders
+.vscode/
+.idea/

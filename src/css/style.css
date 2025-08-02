@@ -1,0 +1,8 @@
+@import 'open-props/style';
+@import 'open-props/normalize';
+
+body {
+  font-family: var(--font-sans);
+  background: var(--gray-0);
+  color: var(--gray-9);
+}
