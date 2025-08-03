@@ -1,22 +1,19 @@
+
 import { defineConfig } from 'vite';
-import FullReload from 'vite-plugin-full-reload';
 
 export default defineConfig({
-  plugins: [FullReload(['**/*.php', '**/*.json'])],
-  base: '',
+  root: 'src',
   build: {
-    outDir: './assets',
+    outDir: '../dist',
+    emptyOutDir: true,
     rollupOptions: {
       input: {
-        main: './src/js/main.js',
-        style: './src/css/style.css'
+        theme: './index.js'
       },
       output: {
-        assetFileNames: assetInfo => /\.(css)$/.test(assetInfo.name) ? 'css/[name][extname]' : '[ext]/[name][extname]',
-        entryFileNames: 'js/[name].js',
-        chunkFileNames: 'js/[name].js'
+        entryFileNames: 'theme.js',
+        assetFileNames: 'theme.css'
       }
     }
-  },
-  css: { postcss: './postcss.config.js' }
+  }
 });

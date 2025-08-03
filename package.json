@@ -1,6 +1,15 @@
 {
+  "name": "notanothertheme",
+  "version": "1.0.0",
+  "description": "Developer-focused WordPress starter theme with theme.json as the source of truth.",
   "scripts": {
+    "prebuild": "node scripts/generate-tokens.js",
+    "build": "vite build",
     "dev": "vite",
-    "build": "vite build"
-  }
+    "start": "vite"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  },
+  "type": "module"
 }

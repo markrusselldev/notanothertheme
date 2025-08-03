@@ -1,0 +1,10 @@
+
+@import 'open-props/normalize';
+@import 'open-props/colors-hsl';
+@import 'open-props/easings';
+@import 'open-props/gradients';
+@import '@shoelace-style/shoelace/dist/themes/light.css';
+
+:root {
+  font-family: 'system-ui', sans-serif;
+}
