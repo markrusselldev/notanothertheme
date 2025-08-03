@@ -1,5 +1,5 @@
-
 import { defineConfig } from 'vite';
+import path from 'path';
 
 export default defineConfig({
   root: 'src',
@@ -8,7 +8,7 @@ export default defineConfig({
     emptyOutDir: true,
     rollupOptions: {
       input: {
-        theme: './index.js'
+        theme: path.resolve(__dirname, 'src/index.js')
       },
       output: {
         entryFileNames: 'theme.js',

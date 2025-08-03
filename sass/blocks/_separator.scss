@@ -8,7 +8,7 @@
 
 		/*
 			We can solve this using including the Gutenberg block styles with: add_theme_support( 'wp-block-styles' )
-			but we decided not to add those styles to blockbase because of potential broad impact of those styles.
+			but we decided not to add those styles to notanothertheme because of potential broad impact of those styles.
 		*/
 		width: 100%;
 	}

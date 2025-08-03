@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Comments
- * slug: blockbase/comments
+ * slug: notanothertheme/comments
  * inserter: no
  */
 
@@ -58,4 +58,4 @@
 
 	<!-- wp:post-comments-form /-->
 </div>
-<!-- /wp:comments-query-loop --> 
+<!-- /wp:comments-query-loop -->
