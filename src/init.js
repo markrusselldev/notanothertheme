@@ -1,5 +1,4 @@
-
-// init.js: Prevent FOUC and register branded spinner
+// init.js: Prevent FOUC and handle Shoelace setup
 document.documentElement.setAttribute("data-theme", "light");
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -7,14 +6,7 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 import { setBasePath } from '@shoelace-style/shoelace/dist/utilities/base-path.js';
-import SlSpinner from '@shoelace-style/shoelace/dist/components/spinner/spinner.component.js';
+import '@shoelace-style/shoelace/dist/components/spinner/spinner.js';
+// DO NOT import header.js — it no longer exists in current Shoelace
 
-// Set base path for Shoelace assets
-setBasePath('/dist/shoelace');
-
-// Optional: Customize branded spinner
-SlSpinner.styles = [
-  ...SlSpinner.styles,
-  /* Add custom CSS overrides here */
-];
-customElements.define('sl-spinner', SlSpinner);
+setBasePath('/dist/vendor/shoelace');

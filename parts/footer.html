@@ -1,1 +1,19 @@
-<!-- wp:pattern {"slug":"notanothertheme/footer-simple"} /-->
+<!-- wp:group {"tagName":"footer","className":"site-footer","layout":{"type":"constrained"}} -->
+<footer class="wp-block-group site-footer">
+  <!-- wp:group {"className":"site-footer__inner","layout":{"type":"flex","justifyContent":"space-between","flexWrap":"wrap","verticalAlignment":"center"}} -->
+  <div class="wp-block-group site-footer__inner">
+
+    <!-- wp:navigation {"className":"nav-footer","layout":{"type":"flex"}} -->
+      <!-- wp:navigation-link {"label":"Privacy","url":"/privacy"} /-->
+      <!-- wp:navigation-link {"label":"Terms","url":"/terms"} /-->
+      <!-- wp:navigation-link {"label":"Sitemap","url":"/sitemap.xml"} /-->
+    <!-- /wp:navigation -->
+
+    <!-- wp:paragraph {"className":"site-footer__copy"} -->
+    <p>&copy; [nat_year][nat_site_title]</p>
+    <!-- /wp:paragraph -->
+
+  </div>
+  <!-- /wp:group -->
+</footer>
+<!-- /wp:group -->

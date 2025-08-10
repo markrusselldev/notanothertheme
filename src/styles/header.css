@@ -1,0 +1,39 @@
+.site-header,
+.site-footer {
+  padding: var(--wp--custom--gap--vertical) var(--wp--custom--gap--horizontal);
+  border-bottom: 1px solid var(--wp--custom--color--tertiary);
+}
+
+.site-footer {
+  border-top: 1px solid var(--wp--custom--color--tertiary);
+  border-bottom: 0;
+  margin-top: var(--wp--custom--gap--vertical);
+}
+
+.site-header__inner,
+.site-footer__inner {
+  max-width: 1200px;
+  margin-inline: auto;
+  display: flex;
+  gap: var(--wp--custom--gap--baseline);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-title a {
+  text-decoration: none;
+  color: var(--wp--custom--color--foreground);
+}
+
+.main-nav .wp-block-navigation__container {
+  gap: calc(1.25 * var(--wp--custom--gap--baseline));
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: var(--wp--custom--color--foreground);
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
